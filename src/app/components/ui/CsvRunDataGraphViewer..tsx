@@ -8,7 +8,7 @@ import { runDataChartType } from '@/types/runDataChartType ';
 import ConvertCsvToChartData from './ConvertCsvToChartData';
 import CsvFileUploader from './CsvFileUploader';
 import RunDataChart from './RunDataRecharts';
-import CustomButton from './CustomButton';
+import Button from '../../../components/Button';
 import { RunDataList } from '@/consts/sampleRunData';
 
 function CsvRunDataGraphViewer() {
@@ -40,7 +40,12 @@ function CsvRunDataGraphViewer() {
         <CsvFileUploader onFileUpload={handleFileUpload} />
         {error && <p className="mt-3 text-red-600 font-semibold">{error}</p>}
       </div>
-      <CustomButton label="sample" colorScheme="blue" onClick={() => showSampleGraph()}/>
+      <Button
+        label="sample"
+        size="sm"
+        assign="primary"
+        onClick={() => showSampleGraph()}
+      />
       {data && <RunDataChart data={data} />}
     </div>
   );

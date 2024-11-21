@@ -1,5 +1,5 @@
 import Link from "next/link";
-import LanguageSwitcher from "./components/LanguageSwitcher";
+import LanguageSwitcher from "./components/ui/LanguageSwitcher";
 
 export default function Home() {
   return (
@@ -17,6 +17,11 @@ export default function Home() {
           className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
         >
           page2
+        </Link>
+        <Link href="../page3" passHref
+          className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+        >
+          design
         </Link>
       </div>
     </div>

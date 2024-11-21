@@ -3,9 +3,9 @@
 //
 "use client";
 
-import { useLocale } from "@/context/LocaleContext";
 import React, { useState } from "react";
-import CustomButton from "./CustomButton";
+import Button from "../../../components/Button";
+import { useLocale } from "@/hooks/useLocale";
 
 export default function LanguageSettings() {
   const { locale, switchLanguage } = useLocale();
@@ -21,24 +21,28 @@ export default function LanguageSettings() {
       <p>現在の言語：{selectedLanguage}</p>
       
       <div className="ml-2 mt-12 flex flex-row space-x-2 self-auto">
-        <CustomButton
+        <Button
           label="日本語"
-          colorScheme="blue"
+          size="lg"
+          assign="primary"
           onClick={() => handleLanguageChange("ja", "日本語")}
         />
-        <CustomButton
+        <Button
           label="English"
-          colorScheme="green"
+          size="md"
+          assign="secondary"
           onClick={() => handleLanguageChange("en", "English")}
         />
-        <CustomButton
+        <Button
           label="한국어"
-          colorScheme="yellow"
+          size="sm"
+          assign="outline"
           onClick={() => handleLanguageChange("ko", "한국어")}
         />
-        <CustomButton
+        <Button
           label="中文"
-          colorScheme="red"
+          size="lg"
+          assign="secondary"
           onClick={() => handleLanguageChange("zh", "中文")}
         />
       </div>

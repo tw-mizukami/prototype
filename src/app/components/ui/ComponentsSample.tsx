@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import { DismissAlert } from './DismissAlert';
-import { useLocale } from '@/context/LocaleContext';
+import { DismissAlert } from '../../../components/DismissAlert';
+import { useLocale } from '@/hooks/useLocale';
 
 export default function ComponentsSample() {
     const { t } = useLocale();

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import CustomButton from "./CustomButton";
+import Button from "../../components/Button";
 
 const SendDataToClient = () => {
   const [inputValue, setInputValue] = useState("");
@@ -38,11 +38,12 @@ const SendDataToClient = () => {
           className="border p-2 rounded flex-grow h-12 text-black"
         />
 
-        <CustomButton
-            label="Send Data"
-            colorScheme="blue"
-            onClick={sendData}
-          />
+        <Button
+          label="Send Data"
+          size="lg"
+          assign="primary"
+          onClick={sendData}
+        />
       </div>
       <p>Response: {responseMessage}</p>
     </div>

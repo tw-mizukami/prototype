@@ -20,9 +20,10 @@ export default function RootLayout({
     <html lang="ja">
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script src="/overlay.js" defer></script>
       </Head>
       <body className={`flex ${inter.className}`}>
-        <LocaleProvider>{children}</LocaleProvider>
+        <LocaleProvider>{children}</LocaleProvider>       
       </body>
     </html>
   );

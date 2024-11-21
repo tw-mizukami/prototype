@@ -1,7 +1,7 @@
-import CsvRunDataGraphViewer from "../components/CsvRunDataGraphViewer.";
-import HomeIconButton from "../components/HomeIconButton";
+import CsvRunDataGraphViewer from "../components/ui/CsvRunDataGraphViewer.";
+import HomeIconButton from "../components/ui/HomeIconButton";
 
-const Page1 = () => {
+const Page2 = () => {
    
     return (
         <>
@@ -11,4 +11,4 @@ const Page1 = () => {
     );
 };
 
-export default Page1;
+export default Page2;
